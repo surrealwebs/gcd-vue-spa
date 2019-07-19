@@ -2,6 +2,7 @@ import TodosMain from './components/todos/Main.vue';
 import TodosList from './components/todos/List.vue';
 import NewTodo from './components/todos/New.vue';
 import Todo from './components/todos/View.vue';
+import Home from './components/Home.vue';
 
 export const routes = [
     {

@@ -8,28 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css" />
-        <link href="/public/css/app.css" rel="stylesheet" />
+        <link href="/frontend/public/css/app.css" rel="stylesheet" />
     </head>
     <body>
         <div id="app">
             <main-app/>
         </div>
-        <script src="/public/js/app.js"></script>
+        <script src="/frontend/public/js/app.js"></script>
     </body>
 </html>
-<!--
-    NOTES:
-
-    Named Route:
-    const router = new VueRouter({
-        routes: [
-            {
-                path: '/user/:userId',
-                name: 'user',
-                component: User
-            }
-        ]
-    });
-    <router-link :to="{ name: 'user', params: { userId: 123 }}">User</router-link>
-
--->

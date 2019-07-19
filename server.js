@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 const cors = require("cors");
-import { sanitizeParam } from "express-validator";
+const { sanitizeParam } = require("express-validator");
 const { check, validationResult } = require('express-validator');
 
 // -----------------------------------------------------------------------------
@@ -181,27 +181,30 @@ app.route("/api/todos/:id")
         });
     }); // end .put
 
+// app.get('/',(req, res) => {
+//     res.send('<p>so many things todo.</p>');
+// });
+
+/*
 // Generic catchall route, mainly to catch 404's.
 app.use((req, res, next) => {
+    console.log( req );
+    console.log( res );
+
     res.status(404);
-    res.format({
-        html: () => {
-            res.render('404', { url: req.url })
-        },
-        json: () => {
-            res.json({ error: 'Not found' })
-        },
-        default: () => {
-            res.type('txt').send('Not found')
-        }
-    })
+    res.json({
+        error: '404 - Not Found.'
+    });
 });
 
 // If you are still here something went wrong.
 app.use((err, req, res, next) => {
     res.status(err.status || 500);
-    res.render( '500', { error: err } );
+    res.json({
+        error: err
+    });
 });
+*/
 
 //                                                                           end
 // -----------------------------------------------------------------------------

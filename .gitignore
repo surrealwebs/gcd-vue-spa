@@ -61,10 +61,10 @@ typings/
 .next
 
 # complied app assets
-public/js/*
-!public/js/.gitkeep
-public/css/*
-!public/css/.gitkeep
+public/js/*.js
+public/css/*.css
+frontend/public/js/*.js
+frontend/public/css/*.css
 
 # IDEs
 /.idea

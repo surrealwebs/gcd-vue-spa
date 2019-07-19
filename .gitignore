@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+# complied app assets
+public/js/*
+!public/js/.gitkeep
+public/css/*
+!public/css/.gitkeep
+
+# IDEs
+/.idea
+/.vscode
+/.vagrant
+

@@ -1,0 +1,28 @@
+{
+  "name": "gdc-todos",
+  "version": "1.0.0",
+  "description": "Todo List with Vue",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surrealwebs/gdc-vue-spa.git"
+  },
+  "author": "Adam Richards",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surrealwebs/gdc-vue-spa/issues"
+  },
+  "homepage": "https://github.com/surrealwebs/gdc-vue-spa#readme",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "sqlite3": "^4.0.9",
+    "umzug": "^2.2.0"
+  }
+}

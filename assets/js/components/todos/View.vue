@@ -32,6 +32,10 @@
                 this.todo = this.todos.find((todo) => todo.id == this.$route.params.id);
             } else {
                 // @TODO Get the specified TODO from the data store
+                axios.get(`/api/todos/${this.$route.params.id}`)
+                    .then((response) => {
+                        this.todo = response.data.todo
+                    });
             }
         },
         data() {

@@ -69,6 +69,11 @@
                 }
 
                 // @TODO Store the new TODO in the data store
+                axios.post('/api/todos/new', this.$data.todo)
+                    .then((response) => {
+                        this.$router.push('/todos');
+                    });
+
             },
             getConstraints() {
                 return {

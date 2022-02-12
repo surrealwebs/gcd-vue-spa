@@ -24,7 +24,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "ajv": "^6.10.2",
+        "ajv": "^6.12.3",
         "imagemin": "^6.0.0",
         "validate.js": "^0.12.0",
         "vue-router": "^3.0.1",
